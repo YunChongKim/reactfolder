@@ -1,100 +1,59 @@
-* {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .m{
-    display: flex;
-    align-items: center;
-  
-    width: 80vw;
-    margin-left: 10vw;
-  
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  
-  .sec {
-    width: 80%;
-    padding: 20px;
-    border: 2px dotted rgb(171, 171, 171);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .fm {
-    width: 100%;
-  }
-  
-  .fdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .div1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sp0, .sp1,.sp2,.sp3,.sp4 {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: white;
-    font-weight: bold;
-  }
-  
-  #spp {
-    color: black;
-    font-size: xx-large;
-  }
-  
-  #sp0 {
-    background-color: #ff9900;
-  }
-  
-  #sp1 {
-    background-color: #669900;
-  }
-  
-  #sp2 {
-    background-color: #006666;
-  }
-  
-  #sp3 {
-    background-color: #0000cc;
-  }
-  
-  #sp4 {
-    background-color: #6600cc;
-  }
-  
-  
-  
-  
-  .bt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background-color: dodgerblue;
-    color: white;
-    border: 0px;
-    border-radius: 5px;
-    margin: 5px;
-  }
-  
-  .bt:hover {
-    background-color:darkslateblue;
-    cursor: pointer;
-  }
+.divLotto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+}
+.d1 , .d2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.sp0, .sp1, .sp2, .sp3, .sp4 {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.spp {
+  color: black;
+  font-size: xx-large;
+}
+.sp0 {
+  background-color: rgba(209, 90, 90, 0.822);
+}
+.sp1 {
+  background-color: rgb(234, 243, 108);
+}
+.sp2 {
+  background-color: rgb(97, 172, 223);
+}
+.sp3 {
+  background-color: rgb(128, 87, 224);
+}
+.sp4 {
+  background-color: rgb(212, 83, 184);
+}
+.bt{
+  background-color: gold;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: navy;
+}
+.bt:hover{
+  background-color: rgb(103, 103, 204);
+}
