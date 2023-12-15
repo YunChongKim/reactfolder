@@ -17,7 +17,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-
+.env
+# 여기에 올라온 파일은 깃허브에 안들어감. env파일은 업로드 안됨. 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

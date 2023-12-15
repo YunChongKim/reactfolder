@@ -8,9 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //index.html에 있던 돔-루트를 그대로 복사해서 가져옴.
 root.render(
 //가져온 root에 app을 넣음  
-  <React.StrictMode>
+  //<React.StrictMode>
     <App />
-  </React.StrictMode>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

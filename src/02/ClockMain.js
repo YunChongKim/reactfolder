@@ -2,6 +2,7 @@ import LogoImg from "../01/LogoImg";
 import {useState} from "react";
 
 function ClockMain(){
+    
     const [ctime, setCtime] = useState(new Date().toLocaleTimeString());
     //let ctime = new Date().toLocaleTimeString();
     

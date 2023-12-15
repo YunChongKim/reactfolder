@@ -12,7 +12,6 @@ section,article{
 }
 section > p{
     margin-top: 20px;
-    background-color: blue;
 }
 .divArticle{
     background-color: rgba(241, 219, 235, 0.342)
