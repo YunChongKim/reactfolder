@@ -11,17 +11,12 @@ export default function Gallery() {
   //fetch 데이터 저장
   const [tdata, setTdata] = useState([]);
 
-  // 화면에 재 랜더링
-   const [tags,setTags] = useState([]);
-
   //키워드 입력
   const kwInput = useRef();
 
-  //버튼 이벤트 처리
   const handleGetData = async (e) => {
     if (e.key !== "Enter") e.preventDefault();
-    
-  //키워드 인코딩
+    //키워드 인코딩
     let enkw = encodeURI(kwInput.current.value);
     if (enkw === '') {
       alert('키워드를 입력하세요.') ;
@@ -41,7 +36,6 @@ export default function Gallery() {
 
     // console.log(url)
 
-    //.then과 동일한 기능
     const resp = await fetch(url);
     const data = await resp.json();
 
@@ -50,9 +44,7 @@ export default function Gallery() {
   }
 
   const handleResetData = (e) => {
-//재 랜더링 일어나지 말라고 prevent 설정함. 
     e.preventDefault();
-//검색 기록 지우는거.
     kwInput.current.value = '';
   }
 
@@ -63,18 +55,7 @@ export default function Gallery() {
   //tdata변경
   useEffect(() => {
     console.log("tdata=", tdata);
-
-    let tm = tdata.map((item, idx) => <TailCard imgSrc={item.galWebImageUrl.replace('http://', 'https://')} title={item.galTitle} key = {`card${idx}`}
-                                              subtitle={item.galPhotographyLocation} tags={item.galSearchKeyword}/>            
-    );
-
-    setTags(tm)    
   }, [tdata])
-
-
-
-
-
 
   return (
     <div className="container mx-auto w-full h-screen">
@@ -97,7 +78,10 @@ export default function Gallery() {
           <TailButton caption=' 취 소 ' bcolor='sky' handleClick={(e) => handleResetData(e)} />
         </form>
         <div>
-          {tags}
+          <TailCard imgSrc={"https://tong.visitkorea.or.kr/cms2/website/61/2952361.jpg"}
+            title={"광안리해수욕장"}
+            subtitle={"부산광역시 수영구 광안동"}
+            tags={"광안리해수욕장, 부산광역시 수영구, 광안리해변, 바닷가, 바다, 부산 광안대교, 다이아몬드 브릿지, 별바다부산, 부산야간관광"} />
         </div>
       </div>
 
